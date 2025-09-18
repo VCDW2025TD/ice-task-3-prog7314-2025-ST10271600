@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".BiometricActivity">
+
+    <!-- Icon for biometric -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_lock_lock"
+        android:layout_marginBottom="24dp"
+        app:tint="@color/black" />
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/tvBiometricPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please authenticate using your fingerprint or face"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Retry Button -->
+    <Button
+        android:id="@+id/btnRetryBiometric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retry Authentication"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+
+</LinearLayout>
